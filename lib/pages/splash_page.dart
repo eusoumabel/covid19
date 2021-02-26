@@ -34,12 +34,14 @@ class _SplashPageState extends State<SplashPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          FadeAnimation(0.7, _icon()),
-          FadeAnimation(1.4, _textTitle()),
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            FadeAnimation(0.7, _icon()),
+            FadeAnimation(1.4, _textTitle()),
+          ],
+        ),
       ),
     );
   }
@@ -57,7 +59,7 @@ class _SplashPageState extends State<SplashPage> {
 
   IconTheme _icon() {
     return IconTheme(
-      data: Theme.of(context).iconTheme,
+      data: Theme.of(context).iconTheme.copyWith(size: 100),
       child: Icon(Icons.sick),
     );
   }

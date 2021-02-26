@@ -1,9 +1,16 @@
+import 'package:intl/intl.dart';
+
 class Helpers {
   static bool validateName(String name) {
     if (name.isEmpty || name == null) {
       return false;
     }
     return true;
+  }
+
+  static String formatarNumero(dynamic num) {
+    final numberFormat = NumberFormat("#,###,000", 'pt_BR');
+    return numberFormat.format(num);
   }
 
   static bool validateEmail(String value) {

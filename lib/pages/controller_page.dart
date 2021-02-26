@@ -1,5 +1,7 @@
 import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
 import 'package:covid19/components/bottom_nav_bar.dart';
+import 'package:covid19/pages/profile_page.dart';
+import 'package:covid19/pages/search_page.dart';
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
@@ -13,6 +15,8 @@ class _ControllerPageState extends State<ControllerPage> {
   int _indiceAtual = 0;
   final List<Widget> _telas = [
     HomePage(),
+    SearchPage(),
+    ProfilePage(),
   ];
   void onTabTapped(int index) {
     setState(() {
@@ -42,6 +46,8 @@ class _ControllerPageState extends State<ControllerPage> {
         elevation: 10,
         items: <BubbleBottomBarItem>[
           bottomNavBarItem(Icons.home, "Home", context),
+          bottomNavBarItem(Icons.search, "Search", context),
+          bottomNavBarItem(Icons.person, "Profile", context),
         ],
       ),
     );

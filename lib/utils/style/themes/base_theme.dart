@@ -26,31 +26,43 @@ ThemeData baseTheme = ThemeData(
 );
 
 TextTheme _textTheme = TextTheme(
-  headline2: GoogleFonts.raleway(
+  headline2: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w400,
   ),
-  headline4: GoogleFonts.raleway(
+  headline4: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w400,
   ),
-  bodyText1: GoogleFonts.raleway(
+  headline5: GoogleFonts.poppins(
+    color: primaryTextColor,
+    fontWeight: FontWeight.w400,
+  ),
+  headline6: GoogleFonts.poppins(
+    color: primaryTextColor,
+    fontWeight: FontWeight.w400,
+  ),
+  subtitle1: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w200,
   ),
-  bodyText2: GoogleFonts.raleway(
+  bodyText1: GoogleFonts.poppins(
     color: primaryTextColor,
     fontWeight: FontWeight.w200,
   ),
-  button: GoogleFonts.raleway(
-    color: primaryColor,
+  bodyText2: GoogleFonts.poppins(
+    color: primaryTextColor,
+    fontWeight: FontWeight.w200,
+  ),
+  button: GoogleFonts.poppins(
+    color: primaryTextColor.withOpacity(0.8),
     fontWeight: FontWeight.bold,
   ),
 );
 
 IconThemeData _iconTheme = IconThemeData(
   color: accentColor,
-  size: 100,
+  size: 25,
 );
 
 InputDecorationTheme _inputDecoration = InputDecorationTheme(
