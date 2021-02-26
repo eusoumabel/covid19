@@ -1,5 +1,5 @@
 import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
-import 'package:covid/components/bottom_nav_bar.dart';
+import 'package:covid19/components/bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';

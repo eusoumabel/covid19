@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:covid/utils/constants.dart';
+import 'package:covid19/utils/constants.dart';
 import 'package:dio/dio.dart';
 
 import 'app_exeptions.dart';

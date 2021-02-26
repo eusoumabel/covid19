@@ -1,4 +1,4 @@
-import 'package:covid/bloc/home_bloc.dart';
+import 'package:covid19/bloc/home_bloc.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {

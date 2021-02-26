@@ -1,4 +1,4 @@
-import 'package:covid/utils/style/animations/fade_animation.dart';
+import 'package:covid19/utils/style/animations/fade_animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

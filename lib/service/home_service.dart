@@ -1,4 +1,4 @@
-import 'package:covid/model/Summary.dart';
+import 'package:covid19/model/Summary.dart';
 
 import 'config/api_service.dart';
 

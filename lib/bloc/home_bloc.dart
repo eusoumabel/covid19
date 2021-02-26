@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:covid/model/Summary.dart';
-import 'package:covid/service/config/api_service.dart';
-import 'package:covid/service/config/base_response.dart';
-import 'package:covid/service/home_service.dart';
+import 'package:covid19/model/Summary.dart';
+import 'package:covid19/service/config/api_service.dart';
+import 'package:covid19/service/config/base_response.dart';
+import 'package:covid19/service/home_service.dart';
 import 'package:flutter/material.dart';
 
 class HomeBloc {
