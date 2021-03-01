@@ -1,5 +1,3 @@
-import 'package:covid19/model/Summary.dart';
-import 'package:covid19/service/config/base_response.dart';
 import 'package:covid19/utils/helpers/helpers.dart';
 import 'package:covid19/utils/style/colors.dart';
 import 'package:flutter/material.dart';

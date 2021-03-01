@@ -1,10 +1,9 @@
 import 'dart:async';
 
 import 'package:covid19/model/Summary.dart';
-import 'package:covid19/service/config/api_service.dart';
-import 'package:covid19/service/config/base_response.dart';
-import 'package:covid19/service/countries_service.dart';
-import 'package:covid19/service/home_service.dart';
+import 'package:covid19/services/config/api_service.dart';
+import 'package:covid19/services/config/base_response.dart';
+import 'package:covid19/services/countries_service.dart';
 import 'package:flutter/material.dart';
 
 class CountriesBloc {

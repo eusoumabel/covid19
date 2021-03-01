@@ -1,6 +1,4 @@
-import 'Svg.dart';
-
-class Countries {
+class Country {
   String country;
   String countryCode;
   String slug;
@@ -11,22 +9,21 @@ class Countries {
   int newRecovered;
   int totalRecovered;
   String date;
-  Future<Svg> flag;
 
-  Countries(
-      {this.country,
-      this.countryCode,
-      this.slug,
-      this.newConfirmed,
-      this.totalConfirmed,
-      this.newDeaths,
-      this.totalDeaths,
-      this.newRecovered,
-      this.totalRecovered,
-      this.date,
-      this.flag});
+  Country({
+    this.country,
+    this.countryCode,
+    this.slug,
+    this.newConfirmed,
+    this.totalConfirmed,
+    this.newDeaths,
+    this.totalDeaths,
+    this.newRecovered,
+    this.totalRecovered,
+    this.date,
+  });
 
-  Countries.fromJson(Map<String, dynamic> json) {
+  Country.fromJson(Map<String, dynamic> json) {
     country = json['Country'];
     countryCode = json['CountryCode'];
     slug = json['Slug'];

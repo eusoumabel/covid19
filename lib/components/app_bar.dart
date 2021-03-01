@@ -5,6 +5,7 @@ AppBar appBar({BuildContext context, String title}) {
     title: Text(
       title,
       style: Theme.of(context).textTheme.headline5,
+      overflow: TextOverflow.fade,
     ),
   );
 }

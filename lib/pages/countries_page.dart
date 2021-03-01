@@ -5,7 +5,7 @@ import 'package:covid19/components/app_bar.dart';
 import 'package:covid19/components/country_card.dart';
 import 'package:covid19/components/native_loading.dart';
 import 'package:covid19/model/Summary.dart';
-import 'package:covid19/service/config/base_response.dart';
+import 'package:covid19/services/config/base_response.dart';
 import 'package:covid19/utils/helpers/helpers.dart';
 import 'package:covid19/utils/helpers/manage_dialogs.dart';
 import 'package:covid19/utils/style/colors.dart';
@@ -102,10 +102,7 @@ class _CountriesPageState extends State<CountriesPage> {
                               itemBuilder: (context, index) {
                                 return countryCard(
                                   context: context,
-                                  countryName: snapshot
-                                      .data.data.countries[index].country,
-                                  countryTotalCases: snapshot.data.data
-                                      .countries[index].totalConfirmed,
+                                  country: snapshot.data.data.countries[index],
                                 );
                               },
                             ),

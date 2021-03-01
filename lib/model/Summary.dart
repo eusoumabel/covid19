@@ -1,9 +1,9 @@
-import 'Countries.dart';
+import 'Country.dart';
 import 'Global.dart';
 
 class Summary {
   Global global;
-  List<Countries> countries;
+  List<Country> countries;
   String date;
 
   Summary({this.global, this.countries, this.date});
@@ -14,7 +14,7 @@ class Summary {
     if (json['Countries'] != null) {
       countries = [];
       json['Countries'].forEach((v) {
-        countries.add(new Countries.fromJson(v));
+        countries.add(new Country.fromJson(v));
       });
     }
     date = json['Date'];

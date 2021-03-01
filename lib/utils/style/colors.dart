@@ -9,5 +9,6 @@ const Color disabledColor = Color(0xFF8a8e96);
 const Color dividerColor = Color(0xFF97BF7A);
 const Color backgroundColor = Color(0xFF102226);
 const Color splashColor = Color(0xFF97BF7A);
+const Color shadowColor = Colors.black;
 
 const Color primaryTextColor = Color(0xFFFAFAFA);

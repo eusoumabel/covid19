@@ -5,7 +5,7 @@ import 'package:covid19/components/app_bar.dart';
 import 'package:covid19/components/covid_card.dart';
 import 'package:covid19/components/native_loading.dart';
 import 'package:covid19/model/Summary.dart';
-import 'package:covid19/service/config/base_response.dart';
+import 'package:covid19/services/config/base_response.dart';
 import 'package:covid19/utils/helpers/helpers.dart';
 import 'package:covid19/utils/helpers/manage_dialogs.dart';
 import 'package:flutter/material.dart';
@@ -131,7 +131,7 @@ class _TrackerPageState extends State<TrackerPage> {
             totalData: snapshot.data.data.global.totalDeaths,
             todayData: snapshot.data.data.global.newDeaths,
           ),
-          //total recoreves
+          //total recovered
           covidCard(
             context: context,
             title: "Total Recovered",
