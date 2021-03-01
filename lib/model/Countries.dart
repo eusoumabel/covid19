@@ -1,3 +1,5 @@
+import 'Svg.dart';
+
 class Countries {
   String country;
   String countryCode;
@@ -9,6 +11,7 @@ class Countries {
   int newRecovered;
   int totalRecovered;
   String date;
+  Future<Svg> flag;
 
   Countries(
       {this.country,
@@ -20,7 +23,8 @@ class Countries {
       this.totalDeaths,
       this.newRecovered,
       this.totalRecovered,
-      this.date});
+      this.date,
+      this.flag});
 
   Countries.fromJson(Map<String, dynamic> json) {
     country = json['Country'];

@@ -32,8 +32,9 @@ class APIService {
     dio.interceptors.add(CustomInterceptors(dio));
   }
 
-  Future<Map<String, dynamic>> doRequest(RequestConfig config) async {
-    String url = Constants.kBaseUrl;
+  Future<Map<String, dynamic>> doRequest(
+      String baseUrl, RequestConfig config) async {
+    String url = baseUrl;
     Options options = Constants.kOptions;
 
     if (!config.path.contains("http")) {

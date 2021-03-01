@@ -1,10 +1,10 @@
 import 'package:bubble_bottom_bar/bubble_bottom_bar.dart';
 import 'package:covid19/components/bottom_nav_bar.dart';
 import 'package:covid19/pages/profile_page.dart';
-import 'package:covid19/pages/search_page.dart';
+import 'package:covid19/pages/countries_page.dart';
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
+import 'tracker_page.dart';
 
 class ControllerPage extends StatefulWidget {
   @override
@@ -14,8 +14,8 @@ class ControllerPage extends StatefulWidget {
 class _ControllerPageState extends State<ControllerPage> {
   int _indiceAtual = 0;
   final List<Widget> _telas = [
-    HomePage(),
-    SearchPage(),
+    TrackerPage(),
+    CountriesPage(),
     ProfilePage(),
   ];
   void onTabTapped(int index) {
@@ -45,8 +45,8 @@ class _ControllerPageState extends State<ControllerPage> {
         ),
         elevation: 10,
         items: <BubbleBottomBarItem>[
-          bottomNavBarItem(Icons.home, "Home", context),
-          bottomNavBarItem(Icons.search, "Search", context),
+          bottomNavBarItem(Icons.bar_chart, "Tracker", context),
+          bottomNavBarItem(Icons.language, "Countries", context),
           bottomNavBarItem(Icons.person, "Profile", context),
         ],
       ),

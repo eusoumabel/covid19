@@ -1,6 +1,7 @@
 import 'package:covid19/utils/style/animations/fade_animation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 import 'controller_page.dart';
 
@@ -57,10 +58,11 @@ class _SplashPageState extends State<SplashPage> {
     );
   }
 
-  IconTheme _icon() {
-    return IconTheme(
-      data: Theme.of(context).iconTheme.copyWith(size: 100),
-      child: Icon(Icons.sick),
+  Widget _icon() {
+    return SvgPicture.asset(
+      'assets/images/virus.svg',
+      color: Theme.of(context).accentColor,
+      height: MediaQuery.of(context).size.height * 0.2,
     );
   }
 }
