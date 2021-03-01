@@ -34,7 +34,7 @@ class _SearchPageState extends State<SearchPage> {
     return Scaffold(
       appBar: appBar(
         context: context,
-        title: "Search",
+        title: "Busca",
       ),
       body: Column(
         children: [
@@ -43,7 +43,7 @@ class _SearchPageState extends State<SearchPage> {
             child: TextFormField(
               controller: _bloc.searchTextController,
               decoration: InputDecoration(
-                hintText: "Country name",
+                hintText: "Nome do país",
                 prefixIcon: IconTheme(
                   data: Theme.of(context).iconTheme,
                   child: Icon(Icons.search),

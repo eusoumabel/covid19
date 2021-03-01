@@ -16,10 +16,10 @@ class Constants {
   static String kInformationString = """
   Covid-19
 
-  This is an app to keep track of the Covid-19 effect around the world. It was first created as a personal project to learn more about Flutter, but also to keep myself updated and others around me.
-  All the data used in this project is from an API provided by Postman.
+  Esse é um aplicativo para monitorar o vírus Covid-19 pelo mundo. Ele foi criado, não só, como um projeto pessoal, para que eu pudesse aprender mais sobre Flutter, mas também para me manter e manter aqueles que estão perto de mim informados.
+  Todos os dados utilizados foram obtidos da API disponibilizada pelo Postman.
   """;
 
-  static String kAuthor = "Developer: Ester Mabel Silva Santos.";
+  static String kAuthor = "Desenvolvedora: Ester Mabel Silva Santos.";
   static String kAuthorGit = "https://github.com/estermabel";
 }

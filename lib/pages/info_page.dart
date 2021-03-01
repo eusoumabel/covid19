@@ -16,7 +16,7 @@ class _InfoPageState extends State<InfoPage> {
     return Scaffold(
       appBar: appBar(
         context: context,
-        title: "Information",
+        title: "Informações",
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -80,7 +80,7 @@ class _InfoPageState extends State<InfoPage> {
               children: [
                 ListTile(
                   title: Text(
-                    "Copy to clipboard.",
+                    "Copiar o link.",
                     style: Theme.of(context).textTheme.button.copyWith(
                           color: Theme.of(context).primaryColor,
                         ),

@@ -55,7 +55,7 @@ class _TrackerPageState extends State<TrackerPage> {
     return Scaffold(
       appBar: appBar(
         context: context,
-        title: "World Tracker",
+        title: "Dados do Mundo",
       ),
       body: LiquidPullToRefresh(
         key: _refreshIndicatorKey,
@@ -111,14 +111,14 @@ class _TrackerPageState extends State<TrackerPage> {
         children: [
           ///Global
           Text(
-            "Last Updated: " +
+            "Atualizado em: " +
                 Helpers.formatterDateAndTimeFromAPI(snapshot.data.data.date),
             style: Theme.of(context).textTheme.bodyText1,
           ),
           //total cases
           covidCard(
             context: context,
-            title: "Total Cases",
+            title: "Total de Casos",
             svgUrl: 'assets/images/virus.svg',
             totalData: snapshot.data.data.global.totalConfirmed,
             todayData: snapshot.data.data.global.newConfirmed,
@@ -126,7 +126,7 @@ class _TrackerPageState extends State<TrackerPage> {
           //total deaths
           covidCard(
             context: context,
-            title: "Total Deaths",
+            title: "Total de Mortes",
             svgUrl: 'assets/images/death.svg',
             totalData: snapshot.data.data.global.totalDeaths,
             todayData: snapshot.data.data.global.newDeaths,
@@ -134,7 +134,7 @@ class _TrackerPageState extends State<TrackerPage> {
           //total recovered
           covidCard(
             context: context,
-            title: "Total Recovered",
+            title: "Total de Recuperações",
             svgUrl: 'assets/images/success.svg',
             totalData: snapshot.data.data.global.totalRecovered,
             todayData: snapshot.data.data.global.newRecovered,

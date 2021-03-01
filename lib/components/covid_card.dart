@@ -82,7 +82,7 @@ Container _today({BuildContext context, int todayData}) {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
-            "Today",
+            "Hoje",
             style: Theme.of(context).textTheme.headline6.copyWith(
                   color: primaryTextColor.withOpacity(0.64),
                 ),

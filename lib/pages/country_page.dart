@@ -23,7 +23,7 @@ class _CountryPageState extends State<CountryPage> {
             Padding(
               padding: const EdgeInsets.only(top: 16.0),
               child: Text(
-                "Last Updated: " +
+                "Atualizado em: " +
                     Helpers.formatterDateAndTimeFromAPI(widget.country.date),
                 style: Theme.of(context).textTheme.bodyText1,
               ),
@@ -35,7 +35,7 @@ class _CountryPageState extends State<CountryPage> {
             //total cases
             covidCard(
               context: context,
-              title: "Total Cases",
+              title: "Total de Casos",
               svgUrl: 'assets/images/virus.svg',
               totalData: widget.country.totalConfirmed,
               todayData: widget.country.newConfirmed,
@@ -43,7 +43,7 @@ class _CountryPageState extends State<CountryPage> {
             //total deaths
             covidCard(
               context: context,
-              title: "Total Deaths",
+              title: "Total de Mortes",
               svgUrl: 'assets/images/death.svg',
               totalData: widget.country.totalDeaths,
               todayData: widget.country.newDeaths,
@@ -51,7 +51,7 @@ class _CountryPageState extends State<CountryPage> {
             //total recovered
             covidCard(
               context: context,
-              title: "Total Recovered",
+              title: "Total de Recuperações",
               svgUrl: 'assets/images/success.svg',
               totalData: widget.country.totalRecovered,
               todayData: widget.country.newRecovered,
@@ -74,15 +74,15 @@ class _CountryPageState extends State<CountryPage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             _countryDescriptionItem(
-              title: "Country",
+              title: "País",
               text: widget.country.country,
             ),
             _countryDescriptionItem(
-              title: "Slug",
+              title: "Variante de Nome",
               text: widget.country.slug,
             ),
             _countryDescriptionItem(
-              title: "Code",
+              title: "Código",
               text: widget.country.countryCode,
             ),
           ],

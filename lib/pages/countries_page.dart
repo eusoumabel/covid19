@@ -56,7 +56,7 @@ class _CountriesPageState extends State<CountriesPage> {
     return Scaffold(
       appBar: appBar(
         context: context,
-        title: "Cases",
+        title: "Casos",
       ),
       body: LiquidPullToRefresh(
         key: _refreshIndicatorKey,
@@ -91,7 +91,7 @@ class _CountriesPageState extends State<CountriesPage> {
                       child: Column(
                         children: [
                           Text(
-                            "Last Updated: " +
+                            "Atualizado em: " +
                                 Helpers.formatterDateAndTimeFromAPI(
                                     snapshot.data.data.date),
                             style: Theme.of(context).textTheme.bodyText1,
