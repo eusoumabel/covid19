@@ -19,29 +19,27 @@ $ flutter run
 
 1. Splash Screen
 
-![Simulator Screen Shot - iPhone 11 Pro - 2021-03-01 at 11 26 30](https://user-images.githubusercontent.com/51540772/109511014-68a5d380-7a81-11eb-8234-b087a73dc317.jpg)
-
+![Splash](https://user-images.githubusercontent.com/51540772/109513043-78261c00-7a83-11eb-9867-48a13f820ac5.png)
 
 2. Track Screen
 
-![Simulator Screen Shot - iPhone 11 Pro - 2021-03-01 at 10 11 57](https://user-images.githubusercontent.com/51540772/109511332-b1f62300-7a81-11eb-8703-65980fb12178.jpg)
+![Tracker](https://user-images.githubusercontent.com/51540772/109513048-79574900-7a83-11eb-84f6-445e9ca690b5.png)
 
 3. Countries Screen
 
-![Simulator Screen Shot - iPhone 11 Pro - 2021-03-01 at 10 12 01](https://user-images.githubusercontent.com/51540772/109511439-c9cda700-7a81-11eb-88ae-982d4abd87d8.jpg)
+![Countries](https://user-images.githubusercontent.com/51540772/109513083-7fe5c080-7a83-11eb-83b2-68d88075646b.png)
 
 4. Search Screen
 
-![Simulator Screen Shot - iPhone 11 Pro - 2021-03-01 at 10 12 11](https://user-images.githubusercontent.com/51540772/109511536-e79b0c00-7a81-11eb-87eb-2c675c55ff17.jpg)
+![Search](https://user-images.githubusercontent.com/51540772/109513057-7bb9a300-7a83-11eb-8329-15a93cf9a895.png)
 
 5. Country Screen
 
-![Simulator Screen Shot - iPhone 11 Pro - 2021-03-01 at 10 12 20](https://user-images.githubusercontent.com/51540772/109511590-f5509180-7a81-11eb-8ea1-9254a78dcf7d.jpg)
-
+![Country](https://user-images.githubusercontent.com/51540772/109513077-7eb49380-7a83-11eb-944b-a0baf5d94f14.png)
 
 6. Information Screen
 
-![Simulator Screen Shot - iPhone 11 Pro - 2021-03-01 at 10 12 26](https://user-images.githubusercontent.com/51540772/109511638-013c5380-7a82-11eb-8288-7acb63f8288c.jpg)
+![Info](https://user-images.githubusercontent.com/51540772/109513065-7cead000-7a83-11eb-82e4-d9551ab9fba8.png)
 
 ## Authors
 
