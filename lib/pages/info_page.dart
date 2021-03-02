@@ -31,8 +31,6 @@ class _InfoPageState extends State<InfoPage> {
                     .bodyText1
                     .copyWith(fontSize: 15),
               ),
-              _linkPreviewBuilder(
-                  previewString: Constants.kApiDocumentationUrl),
               Text(
                 Constants.kAuthor,
                 style: Theme.of(context)
@@ -40,7 +38,13 @@ class _InfoPageState extends State<InfoPage> {
                     .bodyText1
                     .copyWith(fontSize: 15),
               ),
-              _linkPreviewBuilder(previewString: Constants.kAuthorGit),
+              _linkButton(
+                title: "Corona API",
+                previewString: Constants.kApiDocumentationUrl,
+              ),
+              _linkButton(
+                  title: "Developer's GitHub",
+                  previewString: Constants.kAuthorGit),
             ],
           ),
         ),
@@ -48,23 +52,19 @@ class _InfoPageState extends State<InfoPage> {
     );
   }
 
-  Padding _linkPreviewBuilder({String previewString}) {
+  Padding _linkButton({String title, String previewString}) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 16.0, top: 16.0),
-      child: GestureDetector(
-        onTap: () {
+      padding: const EdgeInsets.only(top: 16.0),
+      child: TextButton(
+        child: Text(
+          title,
+          style: Theme.of(context).textTheme.button.copyWith(
+                color: Theme.of(context).dividerColor,
+              ),
+        ),
+        onPressed: () {
           _modal(copyString: previewString);
         },
-        child: Container(
-          padding: EdgeInsets.all(16.0),
-          decoration: BoxDecoration(
-            color: Theme.of(context).primaryColor,
-            borderRadius: BorderRadius.circular(15),
-          ),
-          child: FlutterLinkPreview(
-            url: previewString,
-          ),
-        ),
       ),
     );
   }
