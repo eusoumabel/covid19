@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:covid19/bloc/home_bloc.dart';
 import 'package:covid19/components/app_bar.dart';
 import 'package:covid19/components/covid_card.dart';
-import 'package:covid19/components/native_loading.dart';
 import 'package:covid19/model/Summary.dart';
 import 'package:covid19/services/config/base_response.dart';
 import 'package:covid19/utils/helpers/helpers.dart';
@@ -147,7 +146,12 @@ class _TrackerPageState extends State<TrackerPage> {
   Padding _onLoading() {
     return Padding(
       padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
-      child: NativeLoading(animating: true),
+      child: Align(
+        alignment: Alignment.center,
+        child: CircularProgressIndicator(
+          backgroundColor: Theme.of(context).primaryColor,
+        ),
+      ),
     );
   }
 }

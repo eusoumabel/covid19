@@ -2,7 +2,7 @@ name: covid19
 description: A new Flutter project.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+1
+version: 2.0.0+1
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
@@ -11,6 +11,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Used to launch URLs
+  url_launcher: ^6.0.2
   # Used to handler http requests
   dio: ^3.0.9
   # Used to handler translations

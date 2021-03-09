@@ -1,9 +1,9 @@
+import 'dart:js';
+
 import 'package:covid19/utils/helpers/helpers.dart';
 import 'package:covid19/utils/style/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
-import 'native_loading.dart';
 
 Padding covidCard(
     {BuildContext context,
@@ -56,7 +56,7 @@ Container _total(
                 svgUrl,
                 color: Theme.of(context).accentColor.withOpacity(0.64),
                 height: MediaQuery.of(context).size.height * 0.05,
-                placeholderBuilder: (context) => _onLoading(),
+                placeholderBuilder: (context) => _onLoading(context),
               ),
               Text(
                 Helpers.formatarNumero(totalData),
@@ -97,9 +97,14 @@ Container _today({BuildContext context, int todayData}) {
   );
 }
 
-Padding _onLoading() {
+Padding _onLoading(BuildContext context) {
   return Padding(
     padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
-    child: NativeLoading(animating: true),
+    child: Align(
+      alignment: Alignment.center,
+      child: CircularProgressIndicator(
+        backgroundColor: Theme.of(context).primaryColor,
+      ),
+    ),
   );
 }

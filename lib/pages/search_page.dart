@@ -1,7 +1,6 @@
 import 'package:covid19/bloc/search_bloc.dart';
 import 'package:covid19/components/app_bar.dart';
 import 'package:covid19/components/country_card.dart';
-import 'package:covid19/components/native_loading.dart';
 import 'package:covid19/model/Country.dart';
 import 'package:covid19/model/Summary.dart';
 import 'package:covid19/services/config/base_response.dart';
@@ -105,7 +104,12 @@ class _SearchPageState extends State<SearchPage> {
   Padding _onLoading() {
     return Padding(
       padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
-      child: NativeLoading(animating: true),
+      child: Align(
+        alignment: Alignment.center,
+        child: CircularProgressIndicator(
+          backgroundColor: Theme.of(context).primaryColor,
+        ),
+      ),
     );
   }
 

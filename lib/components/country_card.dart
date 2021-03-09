@@ -6,8 +6,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import 'native_loading.dart';
-
 Widget countryCard({
   BuildContext context,
   Country country,
@@ -48,7 +46,7 @@ Widget countryCard({
                 'assets/images/virus.svg',
                 color: Theme.of(context).accentColor.withOpacity(0.64),
                 height: MediaQuery.of(context).size.height * 0.07,
-                placeholderBuilder: (context) => _onLoading(),
+                placeholderBuilder: (context) => _onLoading(context),
               ),
               Expanded(
                 child: Column(
@@ -79,9 +77,14 @@ Widget countryCard({
   );
 }
 
-Padding _onLoading() {
+Padding _onLoading(BuildContext context) {
   return Padding(
     padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
-    child: NativeLoading(animating: true),
+    child: Align(
+      alignment: Alignment.center,
+      child: CircularProgressIndicator(
+        backgroundColor: Theme.of(context).primaryColor,
+      ),
+    ),
   );
 }
