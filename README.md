@@ -2,6 +2,8 @@
 
 It's an app that shows the cases, deaths and recovered amount of people that was infected with Covid-19.
 
+[Web Demonstration](https://covid19.estermabel.com/#/)
+
 ## Getting Started
 
 To use this app, all you need is flutter installed and running on your machine. Clone this project to your computer and opens a emulator or run on your android device using: 
