@@ -24,11 +24,11 @@ class RequestConfig {
 }
 
 class APIService {
-  Dio dio = Dio();
+  final Dio dio;
 
   final Duration _timeout = Duration(seconds: 60);
 
-  APIService() {
+  APIService(this.dio) {
     dio.interceptors.add(CustomInterceptors(dio));
   }
 

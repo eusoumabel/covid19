@@ -21,6 +21,8 @@ dependencies:
   share:
   url_strategy:
   intl:
+  mockito: ^5.0.16
+  flutter_modular_test: ^1.0.4
 
 dev_dependencies:
   flutter_test:

@@ -2,15 +2,14 @@ import 'dart:async';
 
 import 'package:covid19/app/core/model/Summary.dart';
 import 'package:covid19/app/core/services/config/base_response.dart';
-import 'package:covid19/app/core/services/covid_service.dart';
-import 'package:flutter_modular/flutter_modular.dart' show Disposable;
+import 'package:covid19/app/core/services/covid_service_interface.dart';
+import 'package:flutter_modular/flutter_modular.dart' show Disposable, Modular;
 
 class CountriesBloc extends Disposable {
-  late final CovidService _service;
+  final ICovidService _service;
   late StreamController<BaseResponse<Summary>> summaryController;
 
-  CountriesBloc() {
-    _service = CovidService();
+  CountriesBloc(this._service) {
     summaryController = StreamController();
   }
 

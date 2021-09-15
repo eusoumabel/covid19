@@ -7,7 +7,7 @@ import 'countries_page.dart';
 class CountriesModule extends Module {
   @override
   final List<Bind> binds = [
-    Bind.lazySingleton((i) => CountriesBloc()),
+    Bind.lazySingleton((i) => CountriesBloc(i.get())),
   ];
 
   @override

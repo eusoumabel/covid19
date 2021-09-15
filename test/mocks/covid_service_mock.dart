@@ -1,17 +1,17 @@
 import 'package:covid19/app/core/constants.dart';
 import 'package:covid19/app/core/model/Country.dart';
 import 'package:covid19/app/core/model/Summary.dart';
+import 'package:covid19/app/core/services/config/api_service.dart';
 import 'package:covid19/app/core/services/covid_service_interface.dart';
 import 'package:dio/dio.dart';
+import 'package:mockito/mockito.dart';
 
-import 'config/api_service.dart';
-
-class CovidService implements ICovidService {
+class CovidServiceMock extends Fake implements ICovidService {
   late final APIService _service;
   final Dio dio;
   String _summaryPath = "/summary";
 
-  CovidService(this.dio) {
+  CovidServiceMock(this.dio) {
     this._service = APIService(dio);
   }
 
