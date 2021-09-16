@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:covid19/app/core/constants.dart';
 import 'package:covid19/app/core/model/Country.dart';
 import 'package:covid19/app/core/model/Summary.dart';
@@ -5,6 +7,8 @@ import 'package:covid19/app/core/services/config/api_service.dart';
 import 'package:covid19/app/core/services/covid_service_interface.dart';
 import 'package:dio/dio.dart';
 import 'package:mockito/mockito.dart';
+
+import '../json/summary_json_mock.dart';
 
 class CovidServiceMock extends Fake implements ICovidService {
   late final APIService _service;
@@ -27,10 +31,8 @@ class CovidServiceMock extends Fake implements ICovidService {
 
   @override
   Future<Summary> getSummary() async {
-    final response = await _service.doRequest(
-      API_BASE_URL,
-      RequestConfig(_summaryPath, HttpMethod.get),
-    );
+    final json = summaryJsonMock;
+    final response = jsonDecode(json);
     return Summary.fromJson(response);
   }
 }
