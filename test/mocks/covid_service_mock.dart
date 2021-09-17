@@ -11,14 +11,6 @@ import 'package:mockito/mockito.dart';
 import '../json/summary_json_mock.dart';
 
 class CovidServiceMock extends Fake implements ICovidService {
-  late final APIService _service;
-  final Dio dio;
-  String _summaryPath = "/summary";
-
-  CovidServiceMock(this.dio) {
-    this._service = APIService(dio);
-  }
-
   @override
   Future<List<Country>> doSearch({required String searchText}) async {
     var _response = await getSummary();

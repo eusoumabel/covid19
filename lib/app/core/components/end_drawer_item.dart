@@ -32,13 +32,6 @@ class EndDrawerItem extends StatelessWidget {
                 ),
                 onTap: () => Modular.to.navigate(SEARCH_ROUTE),
               ),
-              ListTile(
-                title: Text(
-                  "Other",
-                  style: Theme.of(context).textTheme.headline6,
-                ),
-                onTap: () => Modular.to.navigate(OTHER_ROUTE),
-              ),
             ],
           ),
         ),

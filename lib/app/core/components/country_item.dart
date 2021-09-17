@@ -1,9 +1,11 @@
 import 'package:covid19/app/core/model/Country.dart';
+import 'package:covid19/app/core/routes.dart';
 import 'package:covid19/app/core/utils/helpers/helpers.dart';
 import 'package:covid19/app/core/utils/helpers/native_loading.dart';
 import 'package:covid19/app/core/utils/style/colors.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_svg/svg.dart';
 
 class CountryItem extends StatelessWidget {
@@ -16,7 +18,10 @@ class CountryItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Modular.to.navigate(
+        COUNTRY_ROUTE,
+        arguments: country,
+      ),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Container(
@@ -40,8 +45,9 @@ class CountryItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SvgPicture.asset(
-                  'assets/images/virus.svg',
-                  color: Theme.of(context).accentColor.withOpacity(0.64),
+                  'images/virus.svg',
+                  color:
+                      Theme.of(context).colorScheme.secondary.withOpacity(0.64),
                   height: MediaQuery.of(context).size.height * 0.07,
                   placeholderBuilder: (context) =>
                       NativeLoading(animating: true),

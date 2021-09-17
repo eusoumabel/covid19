@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:covid19/app/core/components/end_drawer_item.dart';
 import 'package:covid19/app/core/components/summary_item.dart';
 import 'package:covid19/app/core/model/Summary.dart';
+import 'package:covid19/app/core/routes.dart';
 import 'package:covid19/app/core/services/config/base_response.dart';
 import 'package:covid19/app/core/utils/helpers/helpers.dart';
 import 'package:covid19/app/core/utils/helpers/manage_dialogs.dart';
@@ -68,7 +69,11 @@ class _CountriesPageState extends ModularState<CountriesPage, CountriesBloc> {
           overflow: TextOverflow.fade,
         ),
       ),
-      endDrawer: EndDrawerItem(),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () => Modular.to.navigate(SEARCH_ROUTE),
+        icon: Icon(Icons.search),
+        label: Text("Search"),
+      ),
       body: LiquidPullToRefresh(
         key: _refreshIndicatorKey,
         onRefresh: _handleRefresh,

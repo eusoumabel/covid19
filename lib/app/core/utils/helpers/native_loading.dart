@@ -15,7 +15,8 @@ class NativeLoading extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 5.0, bottom: 5.0),
-      child: Platform.isIOS ? _iosLoading() : _androidLoading(context),
+      child: _androidLoading(context),
+      //Platform.isIOS ? _iosLoading() : _androidLoading(context),
     );
   }
 
@@ -33,6 +34,7 @@ class NativeLoading extends StatelessWidget {
       alignment: Alignment.center,
       child: CircularProgressIndicator(
         backgroundColor: Theme.of(context).primaryColor,
+        color: Theme.of(context).colorScheme.secondary,
       ),
     );
   }
