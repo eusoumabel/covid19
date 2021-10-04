@@ -1,47 +1,52 @@
-# Covid-19 App
 
-It's an app that shows the cases, deaths and recovered amount of people that was infected with Covid-19.
+# Covid-19
 
-[Web Demonstration](https://covid19.estermabel.com/#/)
+This project is an app created to keep track of the Covid-19 viruos around the world. You can run it and download directly into your phone or you can access throught the [web](https://covid19.estermabel.com/).
 
-## Getting Started
 
-To use this app, all you need is flutter installed and running on your machine. Clone this project to your computer and opens a emulator or run on your android device using: 
+## Tech Stack
 
-$ flutter run
+This project was developed using **Flutter**. The state manegement tool used was **BloC** alongside with the **Flutter Modular** architecture.
 
-## Built With
+## API Reference
 
-* [Covid19API](https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest) - The web service used
-* [Flutter/Dart](https://flutter.dev) - Framework used
+#### Documentation
 
+You can access the full documentation [here](https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest).
+
+#### Get all
+
+```http
+  GET /summary
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `X-Access-Token` | `string` | **Required** - Your Access Token |
+
+
+  
+## Features
+
+- See the total of cases/deaths/recoveries throught the world
+- See the total of cases/deaths/recoveries by country
+- Search for a country
+
+
+  
 ## Screenshots
 
-* The screenshots were taken from a IOS emulator. The device was an Iphone 11 Pro.
+### 1. Splash
+![Webp net-resizeimage-5](https://user-images.githubusercontent.com/51540772/135903748-62979c7e-e4c5-4655-8560-175aceacdd63.png)
 
-1. Splash Screen
+### 2. Home
+![Hnet com-image-2](https://user-images.githubusercontent.com/51540772/135903965-15d5c22b-0c3f-4a21-8467-7bae3a6f9f1f.png)
 
-![Splash](https://user-images.githubusercontent.com/51540772/109513043-78261c00-7a83-11eb-9867-48a13f820ac5.png)
+### 3. Search
+![Hnet com-image](https://user-images.githubusercontent.com/51540772/135903971-98554eff-f12b-496f-abd3-ede8763a0b3a.png)
 
-2. Track Screen
-
-![Tracker](https://user-images.githubusercontent.com/51540772/109513048-79574900-7a83-11eb-84f6-445e9ca690b5.png)
-
-3. Countries Screen
-
-![Countries](https://user-images.githubusercontent.com/51540772/109513083-7fe5c080-7a83-11eb-83b2-68d88075646b.png)
-
-4. Search Screen
-
-![Search](https://user-images.githubusercontent.com/51540772/109513057-7bb9a300-7a83-11eb-8329-15a93cf9a895.png)
-
-5. Country Screen
-
-![Country](https://user-images.githubusercontent.com/51540772/109513077-7eb49380-7a83-11eb-944b-a0baf5d94f14.png)
-
-6. Information Screen
-
-![Info](https://user-images.githubusercontent.com/51540772/109513065-7cead000-7a83-11eb-82e4-d9551ab9fba8.png)
+### 4. Country
+![Hnet com-image-2](https://user-images.githubusercontent.com/51540772/135903486-c3ccd78c-999a-44b6-a63d-ebfcca6e5147.png)
 
 ## Authors
 
