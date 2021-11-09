@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "covid19-683ba",
     "public": "build/web",
     "ignore": [
       "firebase.json",
